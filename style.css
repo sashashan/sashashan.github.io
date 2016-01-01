@@ -43,13 +43,13 @@ hr.bottom {
 }
 /* for the fontawesome icons */
 .main-icon {
-	margin-top: 26px;
-	margin-left: 4px;
+	margin-top: 26%;
+	margin-left: 2%;
 }
 .icon {
 	width: 100%;
 	height: 100%;
-	border-radius: 50px;
+	/*border-radius: 50px;*/
 	/*opacity: .9;*/
 	transition: opacity 0.5s;
 }
@@ -57,18 +57,18 @@ hr.bottom {
 	opacity: 0;
 	transition: opacity 0.4s;
 }
-.projects-icon:hover {
+.projects_circle:hover {
 	background-image: url("imgs/main_projects.png");
 	opacity: 1;
 	background-size: 400%;
 }
-.aboutme-icon:hover {
+.aboutme_circle:hover {
 	background-image: url("imgs/main_aboutme.jpg");
 	opacity: 1;
 	background-size: 110%;
 }
-.art-icon:hover {
-	background-image: url("imgs/main_paint.jpg");
+.art_circle:hover {
+	background-image: url("imgs/main_art.jpg");
 	opacity: 1;
 	background-size: 100%;
 }
