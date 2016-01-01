@@ -13,7 +13,7 @@ function show(id_clicked, id1, id2) {
 		$('hr.bottom').hide();
 		$('.'+id_clicked+'_circle').animate({
 			marginTop: "1%",
-			// marginRight: "18px", 
+			marginRight: "18px", 
 			height: "70px",
 			width: "70px",
 			borderRadius: "35px"	
@@ -23,7 +23,7 @@ function show(id_clicked, id1, id2) {
 		$('#'+id_clicked+'_icon').removeClass("fa-3x").addClass("fa-2x");
 		$('.'+id1+'_circle').animate({
 			marginTop: "1%",
-			// marginRight: "18px",
+			marginRight: "18px",
 			height: "70px",
 			width: "70px",
 			borderRadius: "35px"
@@ -33,7 +33,7 @@ function show(id_clicked, id1, id2) {
 		$('#'+id1+'_icon').removeClass("fa-3x").addClass("fa-2x");
 		$('.'+id2+'_circle').animate({
 			marginTop: "1%",
-			// marginRight: "18px",
+			marginRight: "18px",
 			height: "70px",
 			width: "70px",
 			borderRadius: "35px"
@@ -42,16 +42,16 @@ function show(id_clicked, id1, id2) {
 		});
 		$('#'+id2+'_icon').removeClass("fa-3x").addClass("fa-2x");
 
+		$('hr.bottom').delay(260).fadeIn(500);
 		menu_is_up = true;
-
-		$('#'+id_clicked+'_icon.icon').animate({
-			opacity: "0"
-		});
-		$('#'+id_clicked+'_icon.icon').css('background-image', 'url("imgs/main_projects.png")');
-
-	} else {
-
 	}
+
+	// $('#'+id_clicked+'_icon.icon').animate({
+	// 	opacity: "0"
+	// });
+	// $('.'+id_clicked+'_circle').css({'background-image': 'url("imgs/main_projects.png")', 'background-size': '400%'});
+
+
 }
 
 function change_background_projects() {
