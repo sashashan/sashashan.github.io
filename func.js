@@ -18,7 +18,7 @@ function show(id_clicked, id1, id2) {
 			width: "70px",
 			borderRadius: "35px"	
 		}, {
-	    	duration: 250
+	    	duration: 240
 		});
 		$('#'+id_clicked+'_icon').removeClass("fa-3x").addClass("fa-2x");
 		$('.'+id1+'_circle').animate({
