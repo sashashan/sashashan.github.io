@@ -44,10 +44,10 @@ function show(id_clicked, id1, id2) {
 
 		menu_is_up = true;
 
-		$('#'+id_clicked+'_circle.icon').animate({
+		$('#'+id_clicked+'_icon.icon').animate({
 			opacity: "0"
 		});
-		$('#'+id_clicked+'_circle.icon').css('backgroundImage', 'url("imgs/main_projects.png")');
+		$('#'+id_clicked+'_icon.icon').css('background-image', 'url("imgs/main_projects.png")');
 
 	} else {
 
