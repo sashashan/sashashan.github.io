@@ -43,11 +43,17 @@ function show(id_clicked, id1, id2) {
 		$('#'+id2+'_icon').removeClass("fa-3x").addClass("fa-2x");
 
 		$('hr.bottom').fadeIn(1000);
-		$('#'+id_clicked).fadeIn(1000);
 		menu_is_up = true;
 	}
 
 	change_background_projects(id_clicked);
+
+	// hide all 3
+	$('#'+id_clicked).hide();
+	$('#'+id1).hide();
+	$('#'+id2).hide();
+
+	$('#'+id_clicked).fadeIn(2000);
 }
 
 function change_background_projects(id) {
@@ -89,7 +95,7 @@ function change_background_projects(id) {
 	}, {
 	    	duration: 10
 	});
-	
+
 	$('.'+id+'_circle').css({'background-image': 'url("imgs/main_'+id+'.jpg")', 'background-size': size});
 
 
