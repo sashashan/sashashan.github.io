@@ -3,19 +3,22 @@ body {
 	text-align: center;
 }
 h1 {
-	font-family:verdana;
-	color:#6699CC;
+	font-family: 'Amaranth', sans-serif;
+	/*color:#6699CC;*/
 	font-weight: normal;
 }
 p {
-	font-family:verdana;
+	font-family: 'Fira Sans', sans-serif;
 	color:#383838;
-	font-size: 1em;
+	font-weight: 300;
 }
 .container {
 	width: 50%;
 	display: inline-block;
 	height: 100%;
+}
+.container_contents {
+	margin-top: 10%;
 }
 hr {
 	position: absolute;
@@ -39,7 +42,7 @@ hr.bottom {
 	margin-right: 25px; 
 	border: 3px solid;
 	border-radius: 50px;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 /* for the fontawesome icons */
 .main-icon {
@@ -55,10 +58,10 @@ hr.bottom {
 }
 .icon:hover {
 	opacity: 0;
-	transition: opacity 0.4s;
+	transition: opacity 0.2s;
 }
 .projects_circle:hover {
-	background-image: url("imgs/main_projects.png");
+	background-image: url("imgs/main_projects.jpg");
 	opacity: 1;
 	background-size: 400%;
 }

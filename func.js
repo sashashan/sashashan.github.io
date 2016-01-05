@@ -42,24 +42,59 @@ function show(id_clicked, id1, id2) {
 		});
 		$('#'+id2+'_icon').removeClass("fa-3x").addClass("fa-2x");
 
-		$('hr.bottom').delay(260).fadeIn(500);
+		$('hr.bottom').fadeIn(1000);
+		$('#'+id_clicked).fadeIn(1000);
 		menu_is_up = true;
 	}
 
-	// $('#'+id_clicked+'_icon.icon').animate({
-	// 	opacity: "0"
-	// });
-	// $('.'+id_clicked+'_circle').css({'background-image': 'url("imgs/main_projects.png")', 'background-size': '400%'});
-
-
+	change_background_projects(id_clicked);
 }
 
-function change_background_projects() {
+function change_background_projects(id) {
+	var size, id1, id2;
+	// reset the color of the other 3 icons and set the size of the background
+	if (id == "projects") { 
+		size = "400%";
+		id1 = "aboutme";
+		id2 = "art"; 
+	}
+	else if (id == "aboutme") { 
+		size = "110%";
+		id1 = "projects"; 
+		id2 = "art";
+	}
+	else { 
+		size = "100%";
+		id1 = "projects";
+		id2 = "aboutme"; 
+	}
+	$('#'+id1+'_icon.icon').animate({
+		opacity: "1"
+	}, {
+	    	duration: 10
+	});
 
-}
-function change_background_aboutme() {
+	$('.'+id1+'_circle').css({'background-image': 'none'});
+
+	$('#'+id2+'_icon.icon').animate({
+		opacity: "1"
+	}, {
+	    	duration: 10
+	});
+
+	$('.'+id2+'_circle').css({'background-image': 'none'});
+
+	$('#'+id+'_icon.icon').animate({
+		opacity: "0"
+	}, {
+	    	duration: 10
+	});
 	
+	$('.'+id+'_circle').css({'background-image': 'url("imgs/main_'+id+'.jpg")', 'background-size': size});
+
+
+
 }
-function change_background_art() {
-	
-}
+
+
+
