@@ -48,7 +48,7 @@ function show(id_clicked, id1, id2) {
 	$('#'+id1).hide();
 	$('#'+id2).hide();
 
-	$('#'+id_clicked).fadeIn(2000);
+	$('#'+id_clicked).delay(1200).fadeIn(2000);
 }
 
 function change_background_projects(id) {
