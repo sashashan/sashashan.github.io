@@ -1,46 +1,62 @@
-<!DOCTYPE html>
+<!DOCTYPE> 
 <html lang="en">
-<body>
-
-	<head>
+<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="func.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-		<link href='https://fonts.googleapis.com/css?family=Montserrat|Bangers|Fira+Sans:300|Righteous|Cuprum|Open+Sans|Source+Sans+Pro|Amaranth' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+		<link href='https://fonts.googleapis.com/css?family=Fira+Sans|Raleway|Open+Sans+Condensed:300|Abel|Quicksand' rel='stylesheet' type='text/css'>
 		<link rel=""
 		type="text/javascript"></script>
+		<!-- <meta content='width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0' name='viewport'> -->
 		<title> sashashanina </title>
-	</head>
+</head>
+<body>
+<!-- note: use push update -->
 
 	<!-- Main div -->
 	<div class="container">
 		<hr class="top"/>
 		<div class="circle projects_circle" onclick="show('projects', 'aboutme', 'art')"> 
-			<i id="projects_icon" class="icon fa fa-cubes fa-3x main-icon"></i> 
+			<i id="projects_icon" class="icon fa fa-cubes fa-3x"></i> 
 		</div>
 		<div class="circle aboutme_circle" onclick="show('aboutme', 'projects', 'art')"> 
-			<!-- <div class="icon"> -->
-				<i id="aboutme_icon" class="icon fa fa-eye fa-3x main-icon"></i> 
-			<!-- </div> -->
+			<i id="aboutme_icon" class="icon fa fa-eye fa-3x"></i> 
 		</div>
 		<div class="circle art_circle" onclick="show('art', 'projects', 'aboutme')"> 
-			<!-- <div class="icon"> -->
-				<i id="art_icon" class="icon fa fa-paint-brush fa-3x main-icon"></i> 
-			<!-- </div> -->
+			<i id="art_icon" class="icon fa fa-paint-brush fa-3x"></i> 
 		</div>
 		<hr class="bottom"/>
 
 		<!-- Content -->
 		<div id="projects" class="container_contents">
-			<h1> coming soon </h1>
+			<h1> octopus - distributed version control system </h1>
+			<p> 
+				The DVCS system, dubbed, octopus, will help you backup and track your files. It will also help
+				share your changes and projects with others. This system is centralized and simple - everyone synchs and checks
+				into the main repository.  
+			</p>
+			<p>
+				The main feutures include:
+				<ul class="a">
+					<li> clone </li>
+					<li> push and pull </li>
+					<li> commit </li>
+					<li> statux </li>
+					<li> branch </li>
+					<li> checkout </li>
+				</ul>		
+			</p>
+			<p>
+				From the implementation side, the system was devided into 5 modules: UI, Workspace, Repo, Revlog and Push and Pull. Check out this <a href="https://github.com/DVCS-253/octopus">Github</a> page for the source code and usage instructions.
+			</p>
 		</div>
 		<div id="aboutme" class="container_contents">
 			<h1> hi there! </h1>
 
 			<p>
-				Born in Moscow, lived in sunny Cyprus and now studying in snowy Rochester, NY. 
+				Born in busy Moscow, lived in sunny Cyprus and now studying in snowy Rochester, NY. 
 			</p>
 			<p>
 				I love coding, drawing, learning new things and making our world a better place to live in.  
@@ -48,6 +64,9 @@
 		</div>
 		<div id="art" class="container_contents">
 			<h1> coming soon </h1>
+			<p>
+				paintings
+			</p>
 		</div>
 	</div>
 
