@@ -19,36 +19,35 @@ function show(id_clicked, id1, id2) {
 		$('hr.top').hide();
 		$('hr.bottom').hide();
 		$('.'+id_clicked+'_circle').addClass("AnimateSlow");
-		// $('.'+id_clicked+'_circle').animate({
-		// 	top: "0%",
-		// 	// transform: translateY("0%"),
-		// 	// webkitTransform: translateY(0%),
-		// 	marginRight: "28px", 
-		// 	height: "70px",
-		// 	width: "70px",
-		// 	borderRadius: "35px"	
-		// }, 340, "swing");
-		// // $('.'+id_clicked+'_circle').css({transform: "translateY(0%)"});
+
 		$('#'+id_clicked+'_icon').removeClass("fa-3x").addClass("fa-2x");
 
 		$('.'+id1+'_circle').addClass("AnimateFast");
 		$('#'+id1+'_icon').removeClass("fa-3x").addClass("fa-2x");
 
 		$('.'+id2+'_circle').addClass("AnimateFast");
+
 		$('#'+id2+'_icon').removeClass("fa-3x").addClass("fa-2x");
-		$('hr.bottom').css({top: "11%"});
+		$('hr.bottom').css({top: "12%"});
 		$('hr.bottom').delay(500).fadeIn(2000);
+
+		change_background_projects(id_clicked);
+		$('#'+id_clicked).delay(1100).fadeIn(2500);
 		menu_is_up = true;
+
+	} else {
+
+		change_background_projects(id_clicked);
+
+		// hide all 3
+		$('#'+id_clicked).hide();
+		$('#'+id1).hide();
+		$('#'+id2).hide();
+
+		$('#'+id_clicked).fadeIn(2000);
 	}
 
-	change_background_projects(id_clicked);
-
-	// hide all 3
-	$('#'+id_clicked).hide();
-	$('#'+id1).hide();
-	$('#'+id2).hide();
-
-	$('#'+id_clicked).delay(1200).fadeIn(2000);
+	
 }
 
 function change_background_projects(id) {

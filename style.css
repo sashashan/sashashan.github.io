@@ -19,11 +19,13 @@ p {
 	width: 50%;
 	margin-left: auto;
     margin-right: auto;
-	height: 100%;
+    height: 100%;
+	/*border:1px solid #cccccc;*/
 }
 .container_contents {
-	position: relative;
-	top: 10%;
+	/*border:1px solid #cccccc;*/
+	/*position: relative;*/
+	margin-top: 10%;
 }
 hr {
 	position: absolute;
@@ -39,15 +41,12 @@ hr.bottom {
     top: 58%;
 }
 .circle {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	/*-webkit-transform: translateY(-50%);*/
+	margin-top: 50%;
 	display: inline-block;
 	vertical-align: middle;
 	height: 100px;
 	width: 100px;
-	margin-right: 25px; 
+	margin-right: 25px;
 	border: 3px solid;
 	border-radius: 50px;
 	opacity: 0.8;
@@ -83,9 +82,7 @@ hr.bottom {
 
 /* For the transition */
 .AnimateFast {
-	top: 0%;
-	transform: translateY(0%);
-	-webkit-transform: translateY(0%);
+	margin-top: 2%;
 	marginRight: 28px;
 	height: 70px;
 	width: 70px;
@@ -93,14 +90,12 @@ hr.bottom {
 	transition: all 0.8s ease;
 }
 .AnimateSlow {
-	top: 0%;
-	transform: translateY(0%);
-	-webkit-transform: translateY(0%);
+	margin-top: 2%;
 	marginRight: 28px;
 	height: 70px;
 	width: 70px;
 	borderRadius: 35px;
-	transition: all 1.2s ease;
+	transition: all 1s ease;
 }
 /* For lists */
 ul.a {
